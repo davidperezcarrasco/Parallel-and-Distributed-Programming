@@ -1,0 +1,54 @@
+invert:
+     44, Generating copyin(image[:ny*nx]) [if not already present]
+         Generating copyout(image_invert[:ny*nx]) [if not already present]
+         Generating Tesla code
+         46, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+         47, #pragma acc loop seq
+     47, Complex loop carried dependence of image_invert->,image-> prevents parallelization
+     52, Generating update self(image_invert[:ny*nx])
+smooth:
+     55, Generating copyout(image_smooth[:ny*nx]) [if not already present]
+         Generating Tesla code
+         57, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+     60, Generating copyout(image_smooth[:ny*nx]) [if not already present]
+         Generating Tesla code
+         63, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+     66, Generating copy(image_smooth[:ny*nx]) [if not already present]
+         Generating copyin(image[:ny*nx]) [if not already present]
+         Generating Tesla code
+         69, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+         70, #pragma acc loop seq
+     70, Complex loop carried dependence of image->,image_smooth-> prevents parallelization
+     86, Generating update self(image_smooth[:ny*nx])
+detect:
+     89, Generating copyout(image_detect[:ny*nx]) [if not already present]
+         Generating Tesla code
+         91, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+     94, Generating copyout(image_detect[:ny*nx]) [if not already present]
+         Generating Tesla code
+         97, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+    100, Generating copy(image_detect[:ny*nx]) [if not already present]
+         Generating copyin(image[:ny*nx]) [if not already present]
+         Generating Tesla code
+        104, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+        105, #pragma acc loop seq
+    105, Complex loop carried dependence of image->,image_detect-> prevents parallelization
+    120, Generating update self(image_detect[:ny*nx])
+enhance:
+    123, Generating copyout(image_enhance[:ny*nx]) [if not already present]
+         Generating Tesla code
+        125, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+    128, Generating copyout(image_enhance[:ny*nx]) [if not already present]
+         Generating Tesla code
+        131, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+    134, Generating copy(image_enhance[:ny*nx]) [if not already present]
+         Generating copyin(image[:ny*nx]) [if not already present]
+         Generating Tesla code
+        138, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+        139, #pragma acc loop seq
+    139, Complex loop carried dependence of image->,image_enhance-> prevents parallelization
+    153, Generating update self(image_enhance[:ny*nx])
+main:
+    188, Generating enter data create(image_detect[:nx*ny],image[:nx*ny],image_invert[:nx*ny],image_smooth[:nx*ny],image_enhance[:nx*ny])
+         Generating update device(image[:nx*ny])
+    213, Generating exit data delete(image_detect[:nx*ny],image[:nx*ny],image_smooth[:nx*ny],image_invert[:nx*ny],image_enhance[:nx*ny])

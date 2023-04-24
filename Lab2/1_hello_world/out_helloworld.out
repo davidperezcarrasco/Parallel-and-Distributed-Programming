@@ -1,0 +1,59 @@
+PHASE 1
+
+Hi, I'm rank 0. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 1. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 2. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 3. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 4. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 5. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 6. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 7. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 8. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 9. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 10. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 11. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 12. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 13. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 14. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+Hi, I'm rank 15. My Communicator is MPI_COMM_WORLD and has a size of 16 processes.
+
+PHASE 2
+
+Hi, I was rank 0 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 0 in communicator SPLIT_COMM_0 which has 4 processes.
+Hi, I was rank 1 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 1 in communicator SPLIT_COMM_0 which has 4 processes.
+Hi, I was rank 2 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 2 in communicator SPLIT_COMM_0 which has 4 processes.
+Hi, I was rank 3 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 3 in communicator SPLIT_COMM_0 which has 4 processes.
+Hi, I was rank 4 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 0 in communicator SPLIT_COMM_1 which has 4 processes.
+Hi, I was rank 5 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 1 in communicator SPLIT_COMM_1 which has 4 processes.
+Hi, I was rank 6 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 2 in communicator SPLIT_COMM_1 which has 4 processes.
+Hi, I was rank 7 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 3 in communicator SPLIT_COMM_1 which has 4 processes.
+Hi, I was rank 8 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 0 in communicator SPLIT_COMM_2 which has 4 processes.
+Hi, I was rank 9 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 1 in communicator SPLIT_COMM_2 which has 4 processes.
+Hi, I was rank 10 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 2 in communicator SPLIT_COMM_2 which has 4 processes.
+Hi, I was rank 11 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 3 in communicator SPLIT_COMM_2 which has 4 processes.
+Hi, I was rank 12 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 0 in communicator SPLIT_COMM_3 which has 4 processes.
+Hi, I was rank 13 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 1 in communicator SPLIT_COMM_3 which has 4 processes.
+Hi, I was rank 14 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 2 in communicator SPLIT_COMM_3 which has 4 processes.
+Hi, I was rank 15 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 3 in communicator SPLIT_COMM_3 which has 4 processes.
+
+PHASE 3
+
+Hi, I was rank 0 in communicator SPLIT_COMM_0 which had 4 processes. Now I'm rank 0 in communicator EVEN_COMM which has 8 processes.
+Hi, I was rank 2 in communicator SPLIT_COMM_0 which had 4 processes. Now I'm rank 1 in communicator EVEN_COMM which has 8 processes.
+Hi, I was rank 4 in communicator SPLIT_COMM_1 which had 4 processes. Now I'm rank 2 in communicator EVEN_COMM which has 8 processes.
+Hi, I was rank 6 in communicator SPLIT_COMM_1 which had 4 processes. Now I'm rank 3 in communicator EVEN_COMM which has 8 processes.
+Hi, I was rank 8 in communicator SPLIT_COMM_2 which had 4 processes. Now I'm rank 4 in communicator EVEN_COMM which has 8 processes.
+Hi, I was rank 10 in communicator SPLIT_COMM_2 which had 4 processes. Now I'm rank 5 in communicator EVEN_COMM which has 8 processes.
+Hi, I was rank 12 in communicator SPLIT_COMM_3 which had 4 processes. Now I'm rank 6 in communicator EVEN_COMM which has 8 processes.
+Hi, I was rank 14 in communicator SPLIT_COMM_3 which had 4 processes. Now I'm rank 7 in communicator EVEN_COMM which has 8 processes.
+
+PHASE 4
+
+Hi, I was rank 1 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 0 in communicator ODD_COMM which has 8 processes.
+Hi, I was rank 3 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 1 in communicator ODD_COMM which has 8 processes.
+Hi, I was rank 5 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 2 in communicator ODD_COMM which has 8 processes.
+Hi, I was rank 7 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 3 in communicator ODD_COMM which has 8 processes.
+Hi, I was rank 9 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 4 in communicator ODD_COMM which has 8 processes.
+Hi, I was rank 11 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 5 in communicator ODD_COMM which has 8 processes.
+Hi, I was rank 13 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 6 in communicator ODD_COMM which has 8 processes.
+Hi, I was rank 15 in communicator MPI_COMM_WORLD which had 16 processes. Now I'm rank 7 in communicator ODD_COMM which has 8 processes.

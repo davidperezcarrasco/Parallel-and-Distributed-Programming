@@ -1,0 +1,3 @@
+pgcc -fast -Minfo=accel   -ta=tesla -o imgproc_streams imgproc_streams.c
+lleo.txt 1920 1214
+Total time: 0.147450
